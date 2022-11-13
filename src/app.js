@@ -7,6 +7,7 @@ app.get('/', (req,res)=>{
     res.send('welcome to server')
 })
 
+
 app.get('/ping', async (req,res)=>{
     const [result] =await pool.query("select * from usu");
     //console.log(result);
