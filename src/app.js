@@ -13,6 +13,7 @@ app.get('/ping', async (req,res)=>{
     //console.log(result);
     res.json(result)
 })
+
 app.get('/aws', async (req,res)=>{
     const [result] =await pool.query("SELECT * from product");
     //console.log(result);
