@@ -4,3 +4,5 @@ export const USER_DB = process.env.USER || 'bsale_test'
 export const PASS_DB = process.env.PASS || 'bsale_test' 
 export const HOST_DB = process.env.HOST || 'mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com' 
 export const DATABASE = process.env.DATABASE || 'bsale_test'
+
+
