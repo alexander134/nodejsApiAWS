@@ -19,7 +19,7 @@ import {USER_DB,HOST_DB,DATABASE,PASS_DB,PORT_DB}  from "./config.js";
     database:'usuariodb'
 })*/
 
-
+/*
 export const pool= createPool({
     user: 'root',
     password:'narualex',
@@ -27,14 +27,14 @@ export const pool= createPool({
     port:3306,
     database:'usuariodb'
 })
+*/
 
 
-/*
 export const pool= createPool({
     user: USER_DB,
     password:PASS_DB,
     host:HOST_DB,
     port:PORT_DB,
     database:DATABASE
-})*/
+})
 
