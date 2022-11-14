@@ -5,10 +5,10 @@ const app = express()
 console.log()
 
 app.get('/', async(req,res)=>{
-    //res.send('welcome to server')
-    const [result] =await pool.query("SELECT * from product");
+    res.send('welcome to server')
+    //const [result] =await pool.query("SELECT * from product");
     //console.log(result);
-    res.json(result)
+    //res.json(result)
 })
 
 
@@ -20,17 +20,20 @@ app.get('/ping', async (req,res)=>{
 })
 
 app.get('/aws', async (req,res)=>{
-    const [result] =await pool.query("SELECT * from product");
-    //console.log(result);
-    res.json(result)
+    //const [result] =await pool.query("SELECT * from product");
+    console.log('aws');
+    //res.json(result)
+    res.send('welcome como estsa aws')
 })
 
 
 app.get('/crear_usuario', async (req,res)=>{
-    const [result] =await pool.query("SELECT * from product");
+    //const [result] =await pool.query("SELECT * from product");
     //const [result] =await pool.query("insert into usu(name)values('alexander5')");
-    //console.log(result);
-    res.json(result[0])
+    console.log('crear_usuario');
+    //res.json(result[0])
+
+    res.send('welcome como estsa usuario nuevo')
 })
 
 app.listen(PORT_DBL)
