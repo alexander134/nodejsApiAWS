@@ -1,7 +1,7 @@
 import {createConnection}  from "mysql2/promise";
 import {createPool}  from "mysql2/promise";
 import {USER_DB,HOST_DB,DATABASE,PASS_DB,PORT_DB}  from "./config.js";
-
+//import {USER_DB,HOST_DB,DATABASE,PASS_DB,PORT_DB}  from "./config2.js";
 
 /*createConnection({
     user: 'bsale_test',
