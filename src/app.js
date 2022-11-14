@@ -17,6 +17,7 @@ app.get('/ping', async (req,res)=>{
     //res.send(` RUTA: ping </br> USER_DB:${USER_DB} </br> HOST_DB:${HOST_DB}</br> DATABASE:${DATABASE}</br> PASS_DB:${PASS_DB}</br>PORT_DB:${PORT_DB}</br>`)
 })
 
+
 app.get('/aws', async (req,res)=>{
     const [result] =await pool.query("SELECT * from product");
     console.log("hols aws");
